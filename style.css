@@ -50,22 +50,26 @@ hr {
   line-height: 2rem;
 }
 /* IDs */
+/* Base styling for all devices */
 #main-container {
   font-family: Arial, sans-serif;
   background-color: var(--primary-color);
   border: solid var(--bg-color) 20px;
   border-radius: 10px;
-  width: 30%;
-  height: 32rem;
-  margin: 50px auto;
   color: var(--text-color);
 
-  /* flexbox */
+  /* Flexbox */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  /* For desktop */
+  max-width: 550px;
+  height: 32rem;  /* Fixed height */
+  margin: 50px auto;
 }
+
 #generate-btn {
   background-color: var(--accent-color);
   color: var(--primary-color);
@@ -87,6 +91,12 @@ hr {
   text-align: center;
   
 }
+
+
+
+
+
+/* animation for button */
 @keyframes glowClick {
   0% {
     box-shadow: 0 0 0px var(--chunli-yellow);
