@@ -9,13 +9,10 @@
   --accent-color: #f5c542;
   --text-color: #e0e6f8;
 }
-header {
-  margin-bottom: 5rem;
-  margin-right: 7.5rem;
-  margin-top: 3rem;
-}
+
 p{
     margin-top: .8rem;
+    font-size: 18px;
 }
 hr {
   width: 83%;
@@ -25,9 +22,11 @@ hr {
   background-color: var(--text-color);
 }
 
+/* class */
+
 .yellow-font {
   color: var(--accent-color);
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 .password-bg {
   background-color: var(--bg-color);
@@ -40,9 +39,11 @@ hr {
   /* flexbox */
   display: flex;
   flex-direction: column;
-  margin-right: 8rem;
+  margin-right: 6rem;
 }
 
+
+/* IDs */
 #main-container {
   font-family: Arial, sans-serif;
   background-color: var(--primary-color);
