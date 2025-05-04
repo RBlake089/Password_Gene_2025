@@ -103,13 +103,13 @@ function randomPasswordGenerator() {
   let password2 = ""; // second password
 
   // Generate first password by randomly selecting 12 characters
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 15; i++) {
     let randomIndex = Math.floor(Math.random() * characters.length);
     password += characters[randomIndex];
   }
 
   // Generate second password using same logic
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 15; i++) {
     let randomIndex2 = Math.floor(Math.random() * characters.length);
     password2 += characters[randomIndex2];
   }
