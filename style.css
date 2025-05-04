@@ -8,7 +8,9 @@
   --primary-color: #1a3c74;
   --accent-color: #f5c542;
   --text-color: #e0e6f8;
+  --chunli-yellow: #ffe600; /* glowing yellow */
 }
+
 
 p{
     margin-top: .8rem;
@@ -28,6 +30,7 @@ hr {
   color: var(--accent-color);
   font-size: 1.9rem;
 }
+
 .password-bg {
   background-color: var(--bg-color);
   width: 12rem;
@@ -42,7 +45,10 @@ hr {
   margin-right: 6rem;
 }
 
-
+.center-text{
+  text-align: center;
+  line-height: 2rem;
+}
 /* IDs */
 #main-container {
   font-family: Arial, sans-serif;
@@ -78,4 +84,21 @@ hr {
   gap: 1rem;
   margin-top: 1.4rem;
   color: var(--text-color);
+  text-align: center;
+  
+}
+@keyframes glowClick {
+  0% {
+    box-shadow: 0 0 0px var(--chunli-yellow);
+  }
+  50% {
+    box-shadow: 0 0 15px 5px var(--chunli-yellow);
+  }
+  100% {
+    box-shadow: 0 0 0px var(--chunli-yellow);
+  }
+}
+
+.glow-on-click {
+  animation: glowClick 0.4s ease-out;
 }
